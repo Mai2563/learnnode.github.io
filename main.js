@@ -12,8 +12,8 @@ http.createServer(function (request, response){
         response.write(data)
         return response.end()
     })
-    //Create file
-    fs.appendFile('mynewfile1.txt', 'Hello Content', function (err){
+    //Update continoun
+    fs.appendFile('mynewfile1.txt', 'This is my text', function (err){
         if (err) throw err;
         console.log('Saved!')
     })
@@ -22,8 +22,8 @@ http.createServer(function (request, response){
         if (err) throw err
         console.log('Saved!')
     })
-
-    fs.writeFile('mynewfile3.txt', 'Hello', function (err){
+    //Update All
+    fs.writeFile('mynewfile3.txt', 'This is my text', function (err){
         if (err) throw err
         console.log('Saved!')
     })
